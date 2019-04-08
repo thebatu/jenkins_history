@@ -1,0 +1,998 @@
+    1  sudo systemctl restart nginx
+    2  nginx-t
+    3  sudo systemctl status nginx.service
+    4  sudo nano /etc/nginx/nginx.conf
+    5  sudo systemctl restart nginx
+    6  sudo tail -30 /var/log/nginx/error.log
+    7  rm /var/log/nginx/error.log
+    8  sudo rm /var/log/nginx/error.log
+    9  sudo systemctl restart nginx
+   10  sudo tail -30 /var/log/nginx/error.log
+   11  sudo cat /var/log/audit/audit.log | grep nginx | grep denied
+   12  audit2allow
+   13  sudo setsebool -P httpd_can_network_connect 1
+   14  sudo systemctl restart nginx
+   15  sudo systemctl stop jenkins
+   16  sudo systemctl stop nginx
+   17  ps -aux | grep jenkinx
+   18  ps -aux | grep jenkins
+   19  ps -aux | grep nginx
+   20  sudo systemctl start nginx
+   21  sudo setsebool -P httpd_can_network_connect 1
+   22  sudo systemctl restart nginx
+   23  sudo nano /etc/nginx/nginx.conf
+   24  sudo systemctl restart nginx
+   25  sudo nano /etc/nginx/nginx.conf
+   26  sudo systemctl restart nginx
+   27  sudo nano /etc/nginx/nginx.conf
+   28  sudo systemctl restart nginx
+   29  $ firewall-cmd --zone=public --remove-port=10050/tcp
+   30  sudo firewall-cmd --zone=public --remove-port=8080/tcp
+   31  firewall-cmd --runtime-to-permanent
+   32  sudo firewall-cmd --runtime-to-permanent
+   33  sudo firewall-cmd --reload 
+   34  sudo systemctl restart firewalld
+   35  sudo systemctl start jenkins
+   36  sudo systemctl enable jenkins
+   37  sudo systemctl enable nginx
+   38  reboot
+   39  sudo reboot
+   40  sudo su
+   41  ls
+   42  docker --help
+   43  top -p
+   44  top -b
+   45  sudo su
+   46  ls
+   47  cd .ssh/
+   48  ls
+   49  cat id_rsa
+   50  cat id_rsa.pub
+   51  cd 
+   52  ls
+   53  cd .ssh/
+   54  ls
+   55  cd /var/lib/jenkins/
+   56  ls
+   57  cd .ssh/
+   58  ls
+   59  cat id_rsa
+   60  cat id_rsa.pub 
+   61  cd /var/lib/jenkins/
+   62  cd .ssh/
+   63  cat id_rsa.pub 
+   64  ls .ssh
+   65  cd var/lib/
+   66  cd /var/lib/jenkins/
+   67  ls
+   68  ls -la
+   69  cd .ssh
+   70  ls
+   71  cat id_rsa.pub 
+   72  cd /usr/local
+   73  ls
+   74  sudo su
+   75  :Q
+   76  ssh bitnami@git.lucine.io
+   77  ping git.lucine.io
+   78  ping 137.74.176.241
+   79  ssh  137.74.176.241
+   80  tracepath 137.74.176.241
+   81  ssh bitnami@137.74.176.241
+   82  docker ps -q 
+   83  docker ps -qf dangling=true
+   84  docker ps -qf status=exited
+   85  docker volume ls -qf dangling=true
+   86  docker images --filter "dangling=true" -q --no-trunc
+   87  docker ps -q
+   88  docker ps -a -q
+   89  exit
+   90  df _h
+   91  df -h
+   92  ls blk
+   93  lsblk
+   94  df -h
+   95  exit
+   96  ls
+   97  emacs \#cleanup-docker.sh# 
+   98  rm *
+   99  emacs cleanup-docker.sh 
+  100  df -h
+  101  sh cleanup-docker.sh 
+  102  df -h
+  103  more cleanup-docker.sh 
+  104  chmod +x cleanup-docker.sh 
+  105  ls
+  106  crontab -e
+  107  export EDITOR=emacs
+  108  crontab -e
+  109  crontab -l
+  110  crontab -e
+  111  ls
+  112  git init
+  113  git remote add origin git@git.lucine.io:Jenkins/cron.git
+  114  git add .
+  115  git commit -m "Initial commit"
+  116  git config user.email "aguitard@lucine.io"
+  117  git config user.name "aguitard"
+  118  git commit -m "Initial commit"
+  119  git push -u origin master
+  120  git config user.email "aguitard@lucine.io
+  121  q
+  122  "
+  123  git config user.email aguitard@lucine.
+  124  git config user.name "alan guitard"
+  125  git push -u origin master
+  126  ssh-keygen -t rsa
+  127  chmod 755 ~/.ssh
+  128  cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+  129  ls
+  130  more ~/.ssh/id_rsa.pub 
+  131  git push -u origin master
+  132  l
+  133  ls
+  134  ls -la
+  135  cd .gradle/
+  136  ls
+  137  ls native/
+  138  ls native/21/
+  139  ls native/21/linux-amd64/libnative-platform
+  140  docker images
+  141  ls
+  142  cd ..
+  143  ls
+  144  ./cleanup-docker.sh 
+  145  ls
+  146  ./cleanup-docker.sh 
+  147  ./cleanup-docker.sh
+  148  ls
+  149  clear
+  150  more cleanup-docker.sh 
+  151  docker ps-q
+  152  docker ps -q
+  153  docker images
+  154  docker os
+  155  docker ps
+  156  docker ps -a
+  157  docker ps -a -l
+  158  cd ls
+  159  cd ..
+  160  ls
+  161  cd jenkins_server/
+  162  ls
+  163  cdls
+  164  cd
+  165  ls
+  166  cd ..
+  167  ls
+  168  cd ..
+  169  ls
+  170  cd
+  171  ls
+  172  cd /
+  173  ls
+  174  cd var/
+  175  cd lib
+  176  ls
+  177  cd jenkins/
+  178  ls
+  179  ls
+  180  cd /
+  181  ps aux | grep jenkins
+  182  cd /var/lib/
+  183  l
+  184  ls
+  185  cd jenkins/
+  186  ls
+  187  cd ~
+  188  systemctl list
+  189  systemctl --help
+  190  sudo systemctl status jenkins
+  191  sudo systemctl stop jenkins
+  192  cd /opt/letsencrypt/
+  193  ./certbot-auto renew
+  194  ps aux | grep nginx
+  195  sudo sytemctl status nginx
+  196  sudo systemctl status nginx
+  197  sudo systemctl stop nginx
+  198  ./certbot-auto renew
+  199  sudo systemctl start nginx
+  200  sudo systemctl start jenkins
+  201  exit
+  202  ls
+  203  sh cleanup-docker.sh 
+  204  ls
+  205  ./cleanup-docker.sh 
+  206  sudo su
+  207  docker los b1059cc7f1b834192fffe16d5a9cb82bd61e55f23a55c727626a17179e259137
+  208  docker logs b1059cc7f1b834192fffe16d5a9cb82bd61e55f23a55c727626a17179e259137
+  209  docker help
+  210  docker ecec 'bin/sh"
+  211  docker exec "bin/sh"
+  212  docker exec -it b1059cc7f1b834192fffe16d5a9cb82bd61e55f23a55c727626a17179e259137 sh
+  213  docker run b1059cc7f1b834192fffe16d5a9cb82bd61e55f23a55c727626a17179e259137
+  214  docker run a35e70164dfb0dd7a9fec8be0b00017a2277c5a221dcab8ffa75f876ed0aae3d
+  215  docker exec -it a35e70164dfb0dd7a9fec8be0b00017a2277c5a221dcab8ffa75f876ed0aae3d sh
+  216  docker ps
+  217  docker ps -a
+  218  docker exec -it a35e70164dfb sh
+  219  docker ps -a -q
+  220  docker exec -it 24cf10a6558d sh
+  221  docker exec -it 565f3e459288 sh
+  222  docker exec -it de74b96980683432ce00d1e884e87253a9a30b4359735711cddac8056058c51c sh
+  223  exit
+  224  ls
+  225  ./cleanup-docker.sh 
+  226  ls
+  227  cd /var/lib/jenkins/
+  228  ls
+  229  cd ..
+  230  ls
+  231  ls -a
+  232  ls -al
+  233  cd jenkins/
+  234  ls -al
+  235  cd workspace/
+  236  ls -al
+  237  cd ~
+  238  l
+  239  ls
+  240  cd ..
+  241  ls
+  242  ps aux | grep jenkins
+  243  sudo systemctl stop jenkins
+  244  sudo systemctl stop nginx
+  245  sudo systemctl start nginx
+  246  sudo systemctl start jenkins
+  247  cd jenkins_server/
+  248  l -art
+  249  ls -art
+  250  cd /var/lib/
+  251  df -h
+  252  cd jenkins/
+  253  df -h
+  254  df -sh ./*/
+  255  du -sh ./*/
+  256  cd workspace/cine_lucinePOCAndroid_PR-32-HSBDAK6NPKQDO2FENKDA62PB2FAW3A6IVHVDETKQMR7YZM2EH6EA
+  257  l
+  258  ls
+  259  ls -art
+  260  ls -a
+  261  ls -al
+  262  cd ?
+  263  ls
+  264  ls -a
+  265  cd .gradle/
+  266  ls
+  267  ls -a
+  268  ls -al
+  269  cd daemon/
+  270  ls -al
+  271  cd ~
+  272  l
+  273  ls
+  274  cd /var/lib/
+  275  ls
+  276  cd jenkins/
+  277  ls
+  278  cd workspace/
+  279  l
+  280  ls
+  281  import hudson.model.*
+  282  // For each project
+  283  for(item in Hudson.instance.items) {
+  284    // check that job is not building
+  285      println("Wiping out workspace of job "+item.name)
+  286      item.doDoWipeOutWorkspace()   }
+  287    else {
+  288      println("Skipping job "+item.name+", currently building")
+  289    }
+  290  chmod -R a+r
+  291  chmod -R a+r *
+  292  sudo chmod -R a+r *
+  293  groups
+  294  sudo chmod -R a+w *
+  295  exit
+  296  ls
+  297  cd ~
+  298  ls
+  299  sudo systemctl stop jenkins
+  300  sudo systemctl stop jenkins
+  301  sudo certbot renew
+  302  sudo systemctl start jenkins
+  303  sudo certbot renew
+  304  ./certbot-auto renew
+  305  l
+  306  cd /etc/letsencrypt/live/
+  307  k
+  308  ls
+  309  cd ..
+  310  ls
+  311  whereis certbot-auto
+  312  whereis certbot
+  313  exit
+  314  cd /home/jenkins_server/
+  315  ls
+  316  more /etc/cron.allow
+  317  more /etc/cron.deny
+  318  sudo more /etc/cron.deny
+  319  sudo more /etc/cron.deny
+  320  sudo more /etc/cron.deny
+  321  sudo more /etc/cron.deny
+  322  sudo more /etc/cron.deny
+  323  ip addr
+  324  sudo more /etc/cron.deny
+  325  sudo more /etc/cron.deny
+  326  crontab -l
+  327  crontab -e
+  328  export EDITOR=emacs
+  329  crontab -e
+  330  emacs cleanup-docker.sh
+  331  ls
+  332  more cleanup-docker.sh 
+  333  ./cleanup-docker.sh 
+  334  docker ps -q
+  335  docker ps -q -a
+  336  ls
+  337  ./cleanup-docker.sh 
+  338  ls
+  339  ls
+  340  ls -la
+  341  ls .sssh
+  342  ls .ssj
+  343  ls .ssh
+  344  more cleanup-docker.sh 
+  345  ls
+  346  cd ..:
+  347  cd ..
+  348  ls
+  349  cd sshuser/
+  350  ls
+  351  cd jenkins_server/
+  352  ls
+  353  ls -a
+  354  cd /opt/letsencrypt/
+  355  ls
+  356  ./certbot-auto renew
+  357  cd /
+  358  ls
+  359  ps aux 
+  360  ls
+  361  cd home/
+  362  ls
+  363  cd jenkins_server/
+  364  ls
+  365  ./cleanup-docker.sh 
+  366  l
+  367  ls
+  368  crontab -l
+  369  crontab 
+  370  crontab -e
+  371  ls
+  372  ./cleanup-docker.sh 
+  373  l
+  374  ls
+  375  ./cleanup-docker.sh 
+  376  ./cleanup-docker.sh 
+  377  more cleanup-docker.sh 
+  378  docker ps -q
+  379  docker ps -a -q
+  380  docker images -q -f dangling=true
+  381  docker images -q -f
+  382  docker images -q
+  383  docker logs c42b6dc54e62
+  384  more cleanup-docker.sh 
+  385  docker rmi fcf659fc15eb
+  386  docker rmi c42b6dc54e62
+  387  docker logs c42b6dc54e62
+  388  docker rmi --help
+  389  docker rmi -f c42b6dc54e62
+  390  docker ps -a -q
+  391  docker images -q
+  392  docker rmi -f fcf659fc15eb
+  393  ifconfig
+  394  lklklk
+  395  ls
+  396  certbot certificates
+  397  sudo certbot certificates
+  398  ls
+  399  ls
+  400  laskdl;sad
+  401  sadasd
+  402  asdasd
+  403  jenkins stop
+  404  service jenkins stop
+  405  sudo service jenkins stop
+  406  certbot renew
+  407  sudo certbot renew
+  408  nginx
+  409  nginx stop
+  410  nginx -s stop
+  411  sudo nginx -s stop
+  412  sudo certbot renew
+  413  sudo nginx -s start
+  414  sudo nginx -s reload
+  415  sudo nginx -s reload
+  416  sudo nginx -s reopen
+  417  ls /run
+  418  sudo nginx -s restart
+  419  ls /etc/init.d
+  420  ls /etc/init.d/network 
+  421  service nginx restart
+  422  sudo service nginx restart
+  423  sudo systemctl restart nginx
+  424  sudo systemctl status nginx
+  425  sudo service jenkins start
+  426  ifconfig
+  427  nano
+  428  nano /etc/networks/interfacesd
+  429  nano /etc/networks/interfaces.d
+  430  cd /etc/networks/
+  431  cd /etc/network/
+  432  cd /etc
+  433  ls
+  434  cd networks 
+  435  cd
+  436  cd /etc/network
+  437  cd /etc/networks
+  438  ll
+  439  cat cleanup-docker.sh 
+  440  ./cleanup-docker.sh 
+  441  docker ps
+  442  ll
+  443  Use df -h
+  444  df -h
+  445  cd
+  446  ls
+  447  cd /home/
+  448  ls
+  449  cd jenkins_server/
+  450  ls
+  451  ll
+  452  cd /home
+  453  ll
+  454  history
+  455  history | less
+  456  cd /var/lib/jenkins/
+  457  ls
+  458  ll
+  459  cd jobs/
+  460  ls
+  461  cd lucine/
+  462  ls
+  463  ll
+  464  ps -aux
+  465  ps -aux | grep jenkins
+  466  ps -aux | grep jenkins | less
+  467  history | grep jenkins
+  468  sudo systemctl stop jenkins
+  469  sudo systemctl start jenkins
+  470  ll
+  471  pwd
+  472  cd ..
+  473  ll
+  474  cd ..
+  475  ll
+  476  reboot
+  477  sudo reboot
+  478  ll
+  479  ls
+  480  ll
+  481  history | less
+  482  cd /opt/letsencrypt/
+  483  ls
+  484  sudo nginx -s stop
+  485  sudo systemctl stop nginx
+  486  sudo systemctl stop jenkins
+  487  ./certbot-auto renew
+  488  sudo systemctl start nginx
+  489  sudo systemctl start jenkins
+  490  exit
+  491  ls
+  492  ./cleanup-docker.sh 
+  493  more cleanup-docker.sh 
+  494  docker stop $(docker ps -q)
+  495  docker rmi -f $(docker images -f "dangling=true" -q)
+  496  image ls
+  497  docker image ls
+  498  Docker
+  499  docker
+  500  docker image ls
+  501  docker image --help
+  502  man docker image 
+  503  ls
+  504  more cleanup-docker.sh 
+  505  docker ps
+  506  docker ps -a
+  507  clear
+  508  ls
+  509  more cleanup-docker.sh 
+  510  docker ps -q
+  511  docker ps -a -q
+  512  history | more
+  513  ./cleanup-docker.sh 
+  514  sudo ./cleanup-docker.sh 
+  515  docker ps
+  516  ls
+  517  ls /etc/sysconfig/jenkins 
+  518  ls -lha /etc/sysconfig/jenkins 
+  519  more /etc/sysconfig/jenkins 
+  520  sudo more /etc/sysconfig/jenkins 
+  521  cd /var/lib/
+  522  cd jenkins/
+  523  ls
+  524  cd logs/
+  525  ls
+  526  ls -lha
+  527  more jenkins.branch.OrganizationFolder.log.5
+  528  sudo systemctl status nginx
+  529  sudo systemctl restart nginx
+  530  sudo systemctl status nginx
+  531  sudo service nginx configtest
+  532  sudo nginx -t
+  533  sudo service nginx status
+  534  ss -ltn
+  535  udo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+  536  sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+  537  sudo apt-get update
+  538  sudo yum update
+  539  sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+  540  ls
+  541  ./cleanup-docker.sh 
+  542  sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+  543  ls
+  544  systemctl status nginx
+  545  sudo yum upgrade
+  546  ervice nginx stop && service nginx-debug start
+  547  service nginx stop && service nginx-debug start
+  548  sudp service nginx stop && service nginx-debug start
+  549  sudo service nginx stop && service nginx-debug start
+  550  sudo service nginx stop && sudo service nginx-debug start
+  551  sudo service nginx stop
+  552  systemctl status nginx
+  553  sudo service nginx-debug start
+  554  sudo vi /etc/nginx/nginx.conf
+  555  more /var/log/nginx/error.log
+  556  sudo more /var/log/nginx/error.log
+  557  nginx -V 2>&1 | grep -- '--with-debug'
+  558  error_log  /var/log/nginx/error.log debug
+  559  sudo vi /etc/nginx/nginx.conf
+  560  nginx -V 2>&1 | grep -- '--with-debug'
+  561  sudo vi /etc/nginx/nginx.conf
+  562  sudo service nginx-debug start
+  563  systemctl status nginx
+  564  sudo systemctl status nginx
+  565  sudo systemctl start nginx
+  566  sudo systemctl status nginx
+  567  sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+  568  sudo vi /etc/nginx/nginx.conf
+  569  sudo vim /etc/nginx/nginx.conf
+  570  sudo vi /etc/nginx/nginx.conf
+  571  sudo reboot
+  572  sudo vi /etc/nginx/nginx.conf
+  573  sudo systemctl restart nginx
+  574  sudo systemctl status nginx
+  575  sudo vi /etc/nginx/nginx.conf
+  576  history | more
+  577  docker images -q -f dangling=true
+  578  ./certbot-auto renew
+  579  ls
+  580  cd /home
+  581  ls
+  582  cd jenkins_server/
+  583  ls
+  584  ./certbot-auto renew
+  585  certbot-auto renew
+  586  cd /usr/bin/
+  587  ls -lha | grep cert
+  588  certbot-auto-2 renew
+  589  ./certbot-auto-2 renew
+  590  ./certbot renew
+  591  sudo ./certbot renew
+  592  sudo systemctl stop nginx
+  593  sudo ./certbot renew
+  594  sudo reboot
+  595  ls
+  596  cd /home
+  597  ls
+  598  cd jenkins_server/
+  599  ls
+  600  cd /home
+  601  ls
+  602  cd jenkins_server/
+  603  ls
+  604  cd /home
+  605  ls
+  606  cd jenkins_server/
+  607  ls
+  608  ./cleanup-docker.sh 
+  609  docker ps -a
+  610  ls
+  611  ll
+  612  cd ..
+  613  ll
+  614  ls sshuser/
+  615  sudo sshuser/
+  616  sudo sshuser
+  617  ll
+  618  cd sshuser/
+  619  sudo cd sshuser/
+  620  ls
+  621  cd ..
+  622  ls
+  623  ll
+  624  cd /home
+  625  nginx -t
+  626  sudo nginx -t
+  627  tail -f /var/log/nginx/error.log
+  628  sudo tail -f /var/log/nginx/error.log
+  629  history | more
+  630  history | less
+  631  history 
+  632  cd /usr/bin/
+  633  ls
+  634  ls -lha | grep cert
+  635  sudo ./certbot-2 register --update-registration --email mzenati@lucine.io
+  636  sudo systemctl status nginx
+  637  sudo tail /var/log/jenkins/jenkins.log
+  638  cd /var/log
+  639  ls
+  640  cd jenkins/
+  641  sudo cd jenkins/
+  642  ls
+  643  cd nginx/
+  644  sudo cd nginx/
+  645  ls
+  646  pwd
+  647  ll -lha
+  648  sudo tail nginx/
+  649  sudo tail nginx
+  650  sudo cd nginx/
+  651  pwd
+  652  ll -lha
+  653  cd nginx/
+  654  sudo cd nginx/
+  655  pwd
+  656  ls
+  657  sudo ls nginx/
+  658  sudo tail nginx/error.log
+  659  sudo ls -lha nginx/
+  660  sudo tail nginx/error.log
+  661  java -jar jenkins.war
+  662  cd
+  663  ls
+  664  cd
+  665  java -jar jenkins.war
+  666  sudo java -jar jenkins.war
+  667  sudo vi /var/lib/jenkins/secrets/initialAdminPassword 
+  668  sudo java -jar jenkins.war
+  669  ls
+  670  java --version
+  671  java -version
+  672  yum whatprovides service
+  673  sudo apt-get update
+  674  sudo yum update
+  675  sudo systemctl start jenkins.service
+  676  sudo systemctl status jenkins.service
+  677  sudo systemctl stop jenkins.service
+  678  sudo systemctl status jenkins.service
+  679  ls
+  680  java -jar jenkins.war
+  681  exit
+  682  sudo cat /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  683  sudo cat /var/lib/jenkins/secrets/initialAdminPassword 
+  684  ls
+  685  cd /home
+  686  ls
+  687  cd jenkins_server/
+  688  cd .jenkins/
+  689  ls
+  690  cd secret
+  691  cd secrets
+  692  ls
+  693  car initialAdminPassword 
+  694  cat initialAdminPassword 
+  695  pwd
+  696  sudo vi /var/lib/jenkins/hudson.model.UpdateCenter.xml 
+  697  pwd
+  698  ls
+  699  cd ..
+  700  ls
+  701  cat config.xml 
+  702  ls
+  703  cd ..
+  704  ls
+  705  cd /home/
+  706  ls
+  707  cd jenkins_server/
+  708  ls
+  709  ls -lha
+  710  pwd
+  711  cd /var/lib/jenkins/
+  712  cat initialAdminPassword 
+  713  whereis initialAdminPassword 
+  714  sudo cat /home/jenkins_server/.jenkins/secrets/initialAdminPassword
+  715  ls
+  716  clear
+  717  ls
+  718  cd /var/lib/jenkins/
+  719  ls
+  720  sudo vi hudson.model.UpdateCenter.xml 
+  721  sudo systemctl status nginx
+  722  sudo ls /etc/nginx/conf.d/
+  723  sudo ls /etc/nginx/
+  724  sudo ls /etc/nginx/conf.d/
+  725  sudo ls -lha /etc/nginx/conf.d/
+  726  sudo whereis jenkins.conf
+  727  sudo ls /usr/lib/jenkins/
+  728  sudo ls /etc/nginx/nginx.conf
+  729  cat ls /etc/nginx/nginx.conf
+  730  ls
+  731  pwd
+  732  cd /etc
+  733  cd sysconfig/
+  734  ls
+  735  cd jenkins 
+  736  ls | grep jenkins 
+  737  ls -lha | grep jenkins 
+  738  sudo vi jenkins 
+  739  pwd
+  740  cd jenkins 
+  741  cd /etc/default/
+  742  ls
+  743  ps -aux | grep jenkins | less
+  744  cd /etc/systemd/system/
+  745  ls
+  746  ls -lha jenkins
+  747  whereis jenkins.service
+  748  cd /usr/lib/
+  749  ls
+  750  cd jenkins/
+  751  ls
+  752  cd
+  753  ls
+  754  whereis jenkins.service
+  755  find . -iname "jenkins.service"
+  756  java -jar jenkins.war
+  757  sudo java -jar jenkins.war
+  758  sudo systemctl status jenkins.service
+  759  sudo systemctl start jenkins.service
+  760  sudo java -jar jenkins.war
+  761  sudo systemctl stop jenkins.service
+  762  java -jar jenkins.war
+  763  sudo yum update jenkins
+  764  ls
+  765  wget http://updates.jenkins-ci.org/download/war/2.32.2/jenkins.war
+  766  wget http://updates.jenkins-ci.org/download/war/2.164.1/jenkins.war
+  767  ls
+  768  mv jenkins.war jenkins.war_old
+  769  mv jenkins.war.1 jenkins.war
+  770  java -jar jenkins.war
+  771  sudo systemctl start jenkins.service
+  772  sudo systemctl enable jenkins
+  773  sudo systemctl status nginx
+  774  sudo systemctl restart nginx
+  775  systemctl start jenkins
+  776  sudo systemctl start jenkins
+  777  systemctl status jenkins
+  778  systemctl enable nginx
+  779  sudo systemctl enable nginx
+  780  setsebool httpd_can_network_connect 1 -P
+  781  sudo setsebool httpd_can_network_connect 1 -P
+  782  history | less
+  783  sudo reboot
+  784  sudo cat /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  785  history | less
+  786  sudo cat /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  787  history | less
+  788  sudo cat /home/jenkins_server/.jenkins/secrets/initialAdminPassword
+  789  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  790  sudo vi /etc/nginx/nginx.conf
+  791  history | less
+  792  sudo firewall-cmd --permanent --zone=public --add-service=http
+  793  sudo firewall-cmd --permanent --zone=public --add-service=https
+  794  history | less
+  795  sudo systemctl enable nginx
+  796  systemctl status jenkins
+  797  sudo systemctl start jenkins
+  798  nginx -t
+  799  sudo nginx -t
+  800  more /var/log
+  801  more /var/log/nginx/
+  802  sudo tail -30 /var/log/nginx/error.log
+  803  sudo firewall-cmd --zone=public --remove-port=8080/tcp
+  804  firewall-cmd --zone=public --remove-port=10050/tcp
+  805  sudo firewall-cmd --zone=public --remove-port=8080/tcp
+  806  firewall-cmd --runtime-to-permanent
+  807  sudo firewall-cmd --runtime-to-permanent
+  808  sudo systemctl restart firewalld
+  809  sudo systemctl start jenkins
+  810  sudo systemctl enable jenkins
+  811  sudo systemctl enable nginx
+  812  sudo reboot
+  813   systemctl daemon-reload
+  814  jenkins_server
+  815  systemctl daemon-reload
+  816  sudo systemctl daemon-reload
+  817  sudo systemctl start nginx
+  818  sudo systemctl status nginx
+  819  sudo reboot
+  820  ls
+  821  sudo firewall-cmd --zone=public --permanent --add-service=http
+  822  yum -y install nginx
+  823  sudo yum -y install nginx
+  824  ping 137.74.176.241
+  825  tracepath 137.74.176.241
+  826  docker ps -q 
+  827  docker ps -qf dangling=true
+  828   lsblk
+  829  sudo sytemctl status nginx
+  830  sudo systemctl status nginx
+  831  netstat -plunt | grep nginx
+  832  sudo netstat -plunt | grep nginx
+  833  sudo systemstl stop nginx
+  834  sudo systemctl stop nginx
+  835  sudo netstat -plunt | grep nginx
+  836  sudo systemctl start nginx
+  837  sudo netstat -plunt | grep nginx
+  838  sudo systemctl status nginx
+  839  firewall-cmd --permanent --zone=public --add-service=http
+  840  sudo firewall-cmd --permanent --zone=public --add-service=http
+  841  sudo systemctl restart firewalld.service
+  842  sudo systemctl status nginx
+  843  ls /etc/systemd/system/nginx.service.d
+  844  more /etc/systemd/system/nginx.service.d
+  845  mkdir /etc/systemd/system/nginx.service.d
+  846  sudo mkdir /etc/systemd/system/nginx.service.d
+  847  printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+  848  sudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+  849  sudo systemctl status nginx
+  850  sudo  printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+  851  sudo systemctl ctop nginx
+  852  sudo systemctl stop nginx
+  853  sudo  printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+  854  cd /etc/systemd/system/nginx.service.d/
+  855  ls
+  856  pwd
+  857  cd ..
+  858  ls -lha[B
+  859  chwon root:root nginx.service.d/
+  860  chown root:root nginx.service.d/
+  861  sudo chown root:root nginx.service.d/
+  862  ls -lha
+  863  sudo chown root:root nginx.service.d
+  864  ls -lha
+  865  sudo chown root nginx.service.d
+  866  ls -lha
+  867  sudo chown nginx:nginx nginx.service.d
+  868  ls -lha
+  869  sudo  printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+  870  sudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+  871  ls
+  872  cd nginx.service.d/
+  873  ls
+  874  touch override.conf
+  875  sudo touch override.conf
+  876  ls
+  877  sudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" > /etc/systemd/system/nginx.service.d/override.conf
+  878  sudo su
+  879  sudo tail -30 /var/log/nginx/error.log
+  880  history | less
+  881  systemctl status nginx
+  882  systemctl status jenkins
+  883  sudo tail -30 /var/log/nginx/error.log
+  884  sudo cat /var/log/audit/audit.log | grep nginx | grep denied
+  885  audit2allow
+  886  sudo service nginx stop && sudo service nginx-debug start
+  887  sudo service nginx stop && service nginx-debug start
+  888  sudo service nginx stop && sudo service nginx-debug start
+  889  sudo service nginx stop
+  890  sudo service nginx-debug start
+  891  systemctl status nginx
+  892  sudo service nginx-debug start
+  893  sudo service nginx start
+  894  systemctl status nginx
+  895  sudo cat /var/log/syslog
+  896  sudo cat /var/log/nginx/error.log
+  897  sudo rm /var/log/nginx/error.log
+  898  sudo cat /var/log/nginx/error.log
+  899  sudo touch /var/log/nginx/error.log
+  900  sudo cat /var/log/nginx/error.log
+  901  sudo systemctl stop nginx
+  902  sudo systemctl start nginx
+  903  sudo cat /var/log/nginx/error.log
+  904  sudo vi /etc/nginx/nginx.conf
+  905  sudo systemctl stop nginx
+  906  sudo systemctl enable nginx
+  907  sudo systemctl start nginx
+  908  sudo vi /etc/nginx/nginx.conf
+  909  ls
+  910  java -jar jenkins.war
+  911  sudo java -jar jenkins.war
+  912  sudo vi /etc/nginx/nginx.confsystemctl start jenkins
+  913  systemctl start jenkins
+  914  sudo systemctl start jenkins
+  915  sudo systemctl status jenkins
+  916  sudo systemctl enable jenkins.service
+  917  sudo vi /etc/systemd/system/jenkins.service
+  918  ls
+  919  pwd
+  920  ls
+  921  sudo vi /etc/systemd/system/jenkins.service
+  922  sudo systemctl stop jenkins
+  923  sudo systemctl start jenkins
+  924  sudo systemctl enable jenkins
+  925  htop
+  926  ls
+  927  sudo java -jar jenkins.war
+  928   java -jar jenkins.war --prefix /foobar
+  929  sudo vi /etc/systemd/system/jenkins.service
+  930  sudo vi /etc/nginx/nginx.conf
+  931  sudo systemctl enable jenkins
+  932  sudo systemctl start jenkins
+  933  sudo systemctl enable jenkins
+  934  sudo vi /etc/nginx/nginx.conf
+  935  sudo nano /etc/nginx/nginx.conf
+  936  exit
+  937  ls
+  938  htop
+  939  sudo systemctl stop jenkins
+  940  htop
+  941  sudo service jenkins stop
+  942  htop
+  943  sudo yum remove jenkins
+  944  cd /var/lib/jenkins/
+  945  ls
+  946  more config.xml 
+  947  ls
+  948  sudo yum remove --purge jenkins -y
+  949  ls
+  950  cd
+  951  ls
+  952  sudo yum install jenkins
+  953  sudo systemctl enable jenkins
+  954  systemctl status jenkins
+  955  sudo reboot
+  956  cat /etc/nginx/conf.d
+  957  ls /etc/nginx/conf.d
+  958  ls /etc/nginx/conf.d/
+  959  ls
+  960  ls /etc/systemd/system
+  961  cat /etc/systemd/system/nginx.service.d/override.conf 
+  962  ls /etc/systemd/system/nginx.service.d
+  963  sudo systemctl stop nginx
+  964  sudo systemctl start nginx
+  965  sudo systemctl status nginx
+  966  sudo systemctl status nginx -l
+  967  ping www.google.com
+  968  whereis initialAdminPassword
+  969  ls
+  970  cd
+  971  ls
+  972  cd /home
+  973  ls -lha
+  974  ls Shared/Jenkins/Home/secrets/initialAdminPassword
+  975  ls
+  976  cd jenkins_server/
+  977  ls
+  978  cd ..
+  979  cd /Users/Shared/Jenkins/Home
+  980  cd ~/
+  981  pwd
+  982  cd .jenkins/secret
+  983  cd .jenkins/
+  984  ls
+  985  \cd secret
+  986  \cd secrets
+  987  ls
+  988  clear
+  989  ls
+  990  ls initialAdminPassword
+  991  more hudson.util.Secret 
+  992  clear
+  993  ls
+  994  ls -lha\
+  995  ls -lha
+  996  ls
+  997  history | less
+  998  history > history.txt
